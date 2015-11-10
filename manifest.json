@@ -1,0 +1,24 @@
+{
+    "author": "duym",
+    "content_scripts": [{
+        "js": ["scripts/jquery.min.js", "scripts/inject.js"],
+        "matches": ["*://*.studyphim.vn/*"]
+    }],
+    "background": {
+        "scripts": ["scripts/background.js"]
+    },
+    "description": "Studyphim Vip",
+    "icons": {
+        "128": "icons/128.png",
+        "16": "icons/16.png"
+    },
+    "manifest_version": 2,
+    "name": "Studyphim Vip",
+    "page_action": {
+        "default_icon": "icons/24.png",
+        "default_title": "Studyphim Vip"
+    },
+    "permissions": ["*://*.studyphim.vn/*"],
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "version": "0.0.2"
+}
